@@ -1,0 +1,11 @@
+name: build
+on:
+  pull_request: {}
+  workflow_dispatch: {}
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+        run: "echo hello world"
